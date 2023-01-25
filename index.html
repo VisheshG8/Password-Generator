@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Password-Generator</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+  <header class="header">
+    <nav class="navbar">
+      <div class="head1">
+        <a href="#">Password Generator</a>
+      </div>
+    </nav>
+  </header>
+
+  <section class="section1">
+
+    <form id="password-form">
+      <label for="password-length">Password Length:</label>
+      <input type="number" id="password-length" name="password-length" min="8" max="32" value="8">
+      <br>
+      <label for="password-charset">Password Charset:</label>
+      <select id="password-charset" name="password-charset">
+        <option value="alpha">Alphabet</option>
+        <option value="alphanumeric">Alphabet and Numbers</option>
+        <option value="alphanumeric-symbols">Alphabet, Numbers, and Symbols</option>
+      </select>
+      <br>
+      <input type="submit" value="Generate Password">
+    </form>
+  </section>
+
+  <section class="section2">
+    <div>
+      <form>
+        <input type="text" id="pass" name="password">
+        <button id="copy-btn">Copy Password</button>
+      </form>
+    </di  v>
+
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
